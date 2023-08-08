@@ -1,0 +1,95 @@
+.layout {
+    height: 100vh;
+
+    .company-name-section {
+        display: flex;
+        height: 64px;
+        align-items: center;
+        justify-content: center;
+        background-color: #e9ebea;
+    }
+
+    .company-name-img {
+        width: 50px;
+        @media (min-width: 768px){
+            width: auto;
+        }
+    }
+
+    .sider {
+        background-color: #464655;
+
+        .menu {
+            color: #bcc1cb;
+            padding: 15px 0;
+            font-size: 16px;
+            ul {
+                margin: 0;
+                list-style: none;
+            }
+        }
+    }
+
+    .header {
+        display: flex;
+
+        .user-profile-section{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 20px;
+            background-color: #ffffff;  
+        }
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        padding: 10px;
+        background: #f4f6f9;
+        @media (min-width: 768px){
+            overflow: hidden;
+        }
+
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        align-items: flex-start;
+        justify-content: center;
+        justify-items: start;
+        font-size: 10px;
+        padding: 10px 40px;
+
+        @media (min-width: 768px){
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #000000;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #b3b6bd;
+        font-size: 10px;
+
+        @media (min-width: 768px){
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #000000;
+        }
+    }
+}

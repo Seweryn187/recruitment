@@ -1,0 +1,33 @@
+app-layout {
+
+
+    .ant-layout-header { 
+        padding: 0;
+    }
+    
+    .ant-layout-footer {
+        padding: 15px 15px;
+    }
+    
+    .ant-menu {
+        background-color: #464655;
+        color: #bcc1cb;
+    
+    }
+    
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background-color: #5c5c70;
+    }
+    
+    .ant-menu-item-selected {
+        color: #bcc1cb;
+    }
+    
+    .ant-menu-light .ant-menu-item:hover {
+        color: #bcc1cb;
+    }
+    
+    .ant-menu-inline .ant-menu-item::after {
+        border-right: 3px solid #ffffff;
+    }
+}

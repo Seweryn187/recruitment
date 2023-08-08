@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './standalones/page-not-found/page-not-found.component';
 
-const routes: Routes = [];
+// I wrote the path in Polish because the application itself is in Polish
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: '/produkty' },
+  { path: 'produkty', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule), title: 'Produkty' },
+  { path: '**', component: PageNotFoundComponent, title: 'Strona nie została znaleziona' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

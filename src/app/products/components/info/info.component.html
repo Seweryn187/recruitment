@@ -1,0 +1,48 @@
+<!--in the case of a real platform, here it would be necessary to add a mechanism for handling various products, 
+    I would probably do it by dynamically generating components of a specific product based on the parameter passed in the route, 
+    but I don't have data in the task to do it
+-->
+<section nz-row [nzGutter]="[0, 16]">
+
+    <section nz-col [nzSpan]="8">
+        <a routerLink="/produkty"> <span nz-icon nzType="arrow-left" nzTheme="outline"></span> Wróć do oferty</a>
+    </section>
+
+    <section nz-col [nzSpan]="16">
+        <span> Jakość powietrza - Diagnoza, prognoza</span>
+    </section>
+
+    <section class="forecasting-wrapper" nz-col [nzSpan]="8">
+        <img class="forecasting-img" alt="Obrazek laptopa z symulacją prognozowania" src="assets/images/Prognozowanie.png"/>
+    </section>
+
+    <section nz-col [nzSpan]="16">
+        <h1 class="title">Dynamiczna Mapa Jakości Powietrza</h1>
+        <section nz-col [nzSpan]="24">
+            <!-- the links here have no href because there is nothing like that in the task -->
+            <a class="hashtag" href="''" title="Łącze do podstrony z wskazaną kategorią">#modelowanie</a>
+            <a class="hashtag" href="''" title="Łącze do podstrony z wskazaną kategorią">#niska emisja</a>
+            <a class="hashtag" href="''" title="Łącze do podstrony z wskazaną kategorią">#jakość powietrza</a>
+        </section>
+
+        <section nz-col [nzSpan]="24">
+            <span> E-usługa <strong> Dynamiczna Mapa Jakości Powietrza</strong> wspiera prowadzenie właściwej polityki informacyjnej oraz podejmowania odpowiednich decyzji, poprzez pokazanie
+                stanu jakości powietrza w dowolnie wybranym miejscu, w czasie rzeczywistym i w niedalekiej przyszłości.
+            </span>
+        </section>
+
+        <section nz-col [nzSpan]="24">
+            <span> Narzędzie umożliwia:</span>
+            <ul class="possibilities">
+                <li>identyfikację źródeł odpowiedzialnych za złą jakość powietrza i określenie ich wpływu na stężenie poszczególnych substancji na danym terenie;</li>
+                <li>raportowanie aktualnej i prognozowanej jakości powietrza dla dzielnic, szkół, przedszkoli itp. oraz planowanie aktyności na zewnątrz;</li>
+                <li>prowadzenie właściwej polityki informacyjnej</li>
+                <li>podniesienie świadomości ekologicznej mieszkańców</li>
+            </ul>
+            <button class="order-button" nz-button nzType="default" (click)="openModal()">Zamów pełną wersję</button>
+        </section>
+
+    </section>
+</section>
+
+

@@ -1,0 +1,17 @@
+:host {
+    font-size: 12px;
+
+    @media (min-width: 768px){
+        font-size: 16px;
+    }
+
+    .user-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-methods {
+        padding-left: 5px;
+    }
+}

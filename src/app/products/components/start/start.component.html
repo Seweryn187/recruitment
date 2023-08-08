@@ -1,0 +1,51 @@
+<h2 class="title">E-usługi</h2>
+<section class="offer">
+    <span>Oferta  <nz-badge nzStandalone [nzCount]="4"  [nzStyle]="{ backgroundColor: '#6c757d', color: '#d8dadd' }"></nz-badge></span>
+</section>
+
+<section class="predictions">
+    <h3>Diagnoza, prognoza</h3>
+    <section nz-row [nzGutter]="12">
+        <section nz-col [nzSpan]="9">
+            <app-tile 
+                imgSrc="assets/images/prognoza.png" 
+                imgAlt="Obrazek monitora z wykresem" 
+                tileDescription="Dynamiczna Mapa Jakości Powietrza"
+                [category]="tilesSubcategories.WODA"
+                >
+            </app-tile>
+        </section>
+        <section nz-col [nzSpan]="9">
+            <app-tile 
+                imgSrc="assets/images/analizy.png" 
+                imgAlt="Obrazek monitora z wykresem i lupą" 
+                tileDescription="Analiza i Alerty" 
+                [category]="tilesSubcategories.POWIETRZE">
+            </app-tile>
+        </section>
+    </section>
+</section>
+
+<section class="planning">
+    <h3>Planowanie, realizacja</h3>
+    <section nz-row [nzGutter]="12">
+        <section nz-col [nzSpan]="9">
+            <app-tile 
+            imgSrc="assets/images/ekoplatnik.png" 
+            imgAlt="Obrazek liścia" 
+            tileDescription="EkoPłatnik" 
+            filterValue=""
+            [category]="tilesSubcategories.INNE">
+        </app-tile>
+        </section>
+        <section nz-col [nzSpan]="9">
+            <app-tile 
+            imgSrc="assets/images/energia.png" 
+            imgAlt="Obrazek sieci wysokiego napięcia" 
+            tileDescription="Zarządzanie Kosztami Energii i Wody" 
+            [category]="tilesSubcategories.BIZNES">
+            >
+        </app-tile>
+        </section>
+    </section>
+</section>

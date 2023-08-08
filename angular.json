@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "basic-model": {
+    "recruitment": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app-model",
+            "outputPath": "dist/recruitment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -28,9 +28,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
+              "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -83,10 +89,10 @@
          },
           "configurations": {
             "production": {
-              "browserTarget": "basic-model:build:production"
+              "browserTarget": "recruitment:build:production"
             },
             "development": {
-              "browserTarget": "basic-model:build:development"
+              "browserTarget": "recruitment:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,7 +100,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "basic-model:build"
+            "browserTarget": "recruitment:build"
           }
         },
         "test": {
@@ -111,6 +117,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
               "src/styles.scss"
             ],
             "scripts": []

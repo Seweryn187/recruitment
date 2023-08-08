@@ -1,0 +1,33 @@
+<form class="user-form"  [formGroup]="userForm">
+    <section *nzModalTitle>
+        <span><strong> Weronika s, zamów pełną wersję e-usługi Dynamiczna Mapa Jakości powietrza</strong></span>
+    </section>
+    <section>
+        <p> <span nz-icon nzType="check-circle" nzTheme="outline"></span> Nasz konsultant uzgodni z Tobą szczegóły zamówienia.</p>
+        <p> <span nz-icon nzType="check-circle" nzTheme="outline"></span> E-usługa dostosowana do Twoich potrzeb.</p>
+    </section>
+
+    <section>
+        <span>Sposób kontaktu</span> 
+        <nz-radio-group class="contact-methods" formControlName="contact">
+            <label nz-radio nzValue="Telefonicznie"><strong>Telefonicznie</strong></label>
+            <label nz-radio nzValue="E-mail"><strong>E-mail</strong></label>
+        </nz-radio-group>
+    </section>
+    <section>
+        <label for="phone-number"><strong>Telefon komórkowy</strong></label>
+        <input nz-input id="phone-number" formControlName="phoneNumber" />
+    </section>
+    <section>
+        <label for="home-phone"><strong>Telefon stacjonarny</strong></label>
+        <input nz-input id="home-phone" placeholder="11 111 11 11" formControlName="homePhone"/>
+    </section>
+    <section>
+        <label for="internal-number"><strong>Numer wewnętrzny</strong></label>
+        <input nz-input id="internal-number" formControlName="internalNumber"/>
+    </section>
+    <section class="modal-footer" *nzModalFooter>
+        <button nz-button class="cancel" (click)="closeModal()">Anuluj</button>
+        <button nz-button class="order" (click)="saveUserDetails()">Zamów</button>
+    </section>
+</form>

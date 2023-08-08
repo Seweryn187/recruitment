@@ -1,0 +1,42 @@
+<nz-layout class="layout">
+    
+    <nz-sider class="sider" nzWidth="250px" [nzCollapsedWidth]="50" [nzBreakpoint]="'md'">
+        <section class="company-name-section">
+            <a [routerLink]="''" title="Kieruje do strony startowej"><img class="company-name-img" alt="Obrazek z nazwą firmy" src="assets/images/pobrane.png"/></a>
+        </section>
+        <section class="menu">
+            <ul nz-menu nzMode="inline" class="header-menu">
+                <!-- here is another icon because I couldn't find a similar one in the library -->
+                <li nz-menu-item nzSelected> <span nz-icon nzType="customer-service" nzTheme="outline"></span> <span> E-usługi</span></li>
+            </ul>
+        </section>
+
+    </nz-sider>
+    
+    <nz-layout>
+        <header>
+        <nz-header class="header">
+            <section nz-col nzSpan="24" class="user-profile-section">
+                <span nz-icon nzType="user" nzTheme="outline"></span>
+            </section>
+        </nz-header>
+        </header>
+        <main class="main-content">
+            <nz-content >
+                <router-outlet></router-outlet>
+            </nz-content>
+        </main>
+  
+        <section class="help">
+            <!-- the links here have no href because there is nothing like that in the task -->
+            <a class="link" href="''" title="Kieruje do strony z polityką prywatności">Polityka prywatności</a>
+            <a class="link" href="''" title="Kieruje do strony z polityką cookies">Polityka cookies i podobnych technologii</a>
+            <a class="link" href="''" title="Kieruje do strony z pomocą">Pomoc <span nz-icon nzType="export" nzTheme="outline"></span></a>
+        </section>
+        <footer>
+        <nz-footer class="footer"> 
+            <span class="created-by">Created by: <a class="link" href="''" title="KLieruje do strony firmy Atmoterm SA">© Atmoterm SA</a></span>
+        </nz-footer>
+        </footer>
+    </nz-layout>
+  </nz-layout>

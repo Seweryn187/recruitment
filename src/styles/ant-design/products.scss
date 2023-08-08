@@ -1,0 +1,83 @@
+app-start {
+    .ant-badge-count {
+        border-radius: 5px;
+    }
+    
+    .ant-card-body {
+        padding: 15px 0 0 0;
+        border-radius: 5px;
+        height: 100%;
+    }
+}
+
+app-info {
+
+    .ant-btn {
+        background-color: #6c757d;
+        color: #fbf5ee;
+    }
+    .ant-btn>span {
+        padding: 0 25px;
+        font-size: 10px;
+        
+        @media (min-width: 768px){
+            padding: 0 50px;
+            font-size: 16px;
+        }
+    }
+}
+
+nz-modal-container {
+
+    p {
+        .anticon, .anticon svg {
+            fill: green;
+        }
+    }
+
+
+    .ant-btn {
+        width: auto;
+
+        @media (min-width: 768px){
+            width: 48%;
+        }
+        color: #fff;
+    }
+
+    .ant-modal-header {
+        border-bottom: none;
+    }
+
+    .ant-modal-title {
+        font-size: 11px;
+        
+        @media (min-width: 768px){
+            font-size: 16px;
+        }
+    }
+
+    .ant-radio-wrapper {
+        font-size: 11px;
+
+        @media (min-width: 768px){
+            font-size: 16px;
+        }
+    }
+
+    .ant-modal-footer {
+        text-align: center;
+        border-top: none;
+    }
+
+    .ant-btn.cancel {
+        background-color: #dc3545;
+    }
+
+    .ant-btn.order {
+        background-color: #1e7b34;
+
+    }
+
+
+}
