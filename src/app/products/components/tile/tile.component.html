@@ -1,44 +1,8 @@
 
-<!-- i think it would be a better idea to specify the color by inputs, but the task is to make it based on categories, so i did-->
-<ng-container [ngSwitch]="category">
-
-    <ng-container *ngSwitchCase="tilesSubcategories.WODA">
-        <nz-card [nzBodyStyle]="{backgroundColor: '#00acba'}">
-            <img [alt]="imgAlt" [src]="imgSrc" [ngStyle]="{filter: filterValue}" />
-            <h4 class="description">{{tileDescription}}</h4>
-            <section class="subtitle" [ngStyle]="{backgroundColor: '#009aa7'}">
-                <a [routerLink]="['/produkty', category, 'szczegóły']"><h4>Dowiedz się więcej <span nz-icon nzType="arrow-right" nzTheme="outline"></span></h4></a>
-            </section>
-        </nz-card>
-    </ng-container>
-
-    <ng-container *ngSwitchCase="tilesSubcategories.POWIETRZE">
-        <nz-card [nzBodyStyle]="{backgroundColor: '#ec901b'}">
-            <img [alt]="imgAlt" [src]="imgSrc" [ngStyle]="{filter: filterValue}" />
-            <h4 class="description">{{tileDescription}}</h4>
-            <section class="subtitle" [ngStyle]="{backgroundColor: '#d48118'}">
-                <a [routerLink]="['/produkty', category, 'szczegóły']"><h4>Dowiedz się więcej <span nz-icon nzType="arrow-right" nzTheme="outline"></span></h4></a>
-            </section>
-        </nz-card>
-    </ng-container>
-
-    <ng-container *ngSwitchCase="tilesSubcategories.INNE">
-        <nz-card class="light-card" [nzBodyStyle]="{backgroundColor: '#464655'}">
-            <img [alt]="imgAlt" [src]="imgSrc" [ngStyle]="{filter: filterValue}" />
-            <h4 class="description">{{tileDescription}}</h4>
-            <section class="subtitle" [ngStyle]="{backgroundColor: '#3f3f4c'}">
-                <a [routerLink]="['/produkty', category, 'szczegóły']"><h4>Dowiedz się więcej <span nz-icon nzType="arrow-right" nzTheme="outline"></span></h4></a>
-            </section>
-        </nz-card>
-    </ng-container>
-
-    <ng-container *ngSwitchCase="tilesSubcategories.BIZNES">
-        <nz-card [nzBodyStyle]="{backgroundColor: '#97ad4f'}">
-            <img [alt]="imgAlt" [src]="imgSrc" [ngStyle]="{filter: filterValue}" />
-            <h4 class="description">{{tileDescription}}</h4>
-            <section class="subtitle" [ngStyle]="{backgroundColor: '#889b47'}">
-                <a [routerLink]="['/produkty', category, 'szczegóły']"><h4>Dowiedz się więcej <span nz-icon nzType="arrow-right" nzTheme="outline"></span></h4></a>
-            </section>
-        </nz-card>
-    </ng-container>
-</ng-container>
+<nz-card >
+    <img [alt]="imgAlt" [src]="imgSrc" [ngStyle]="{filter: filterValue}" />
+    <h4 class="description">{{tileDescription}}</h4>
+    <section class="subtitle">
+        <a class="know-more-link" [routerLink]="['/produkty', category, 'szczegóły']"><h4 class="link-text">Dowiedz się więcej <span nz-icon nzType="arrow-right" nzTheme="outline"></span></h4></a>
+    </section>
+</nz-card>

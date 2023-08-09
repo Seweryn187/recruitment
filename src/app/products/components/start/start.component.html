@@ -8,19 +8,22 @@
     <section nz-row [nzGutter]="12">
         <section nz-col [nzSpan]="9">
             <app-tile 
+                appTileColor
                 imgSrc="assets/images/prognoza.png" 
                 imgAlt="Obrazek monitora z wykresem" 
                 tileDescription="Dynamiczna Mapa Jakości Powietrza"
-                [category]="tilesSubcategories.WODA"
+                [appTileColorCategory]="tilesSubcategories.WODA"
                 >
             </app-tile>
         </section>
         <section nz-col [nzSpan]="9">
             <app-tile 
+                appTileColor
                 imgSrc="assets/images/analizy.png" 
                 imgAlt="Obrazek monitora z wykresem i lupą" 
                 tileDescription="Analiza i Alerty" 
-                [category]="tilesSubcategories.POWIETRZE">
+                [appTileColorCategory]="tilesSubcategories.POWIETRZE"
+                >
             </app-tile>
         </section>
     </section>
@@ -31,19 +34,21 @@
     <section nz-row [nzGutter]="12">
         <section nz-col [nzSpan]="9">
             <app-tile 
+            appTileColor
             imgSrc="assets/images/ekoplatnik.png" 
             imgAlt="Obrazek liścia" 
             tileDescription="EkoPłatnik" 
             filterValue=""
-            [category]="tilesSubcategories.INNE">
+            [appTileColorCategory]="tilesSubcategories.INNE">
         </app-tile>
         </section>
         <section nz-col [nzSpan]="9">
             <app-tile 
+            appTileColor
             imgSrc="assets/images/energia.png" 
             imgAlt="Obrazek sieci wysokiego napięcia" 
             tileDescription="Zarządzanie Kosztami Energii i Wody" 
-            [category]="tilesSubcategories.BIZNES">
+            [appTileColorCategory]="tilesSubcategories.BIZNES">
             >
         </app-tile>
         </section>

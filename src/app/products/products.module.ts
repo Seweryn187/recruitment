@@ -7,9 +7,10 @@ import { AntDesignModule } from '../ant-design.module';
 import { TileComponent } from './components/tile/tile.component';
 import { UserDetailsModalComponent } from './components/user-details-modal/user-details-modal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TileColorDirective } from './directives/tile-color.directive';
 
 @NgModule({
-  declarations: [StartComponent, InfoComponent, TileComponent, UserDetailsModalComponent],
+  declarations: [StartComponent, InfoComponent, TileComponent, UserDetailsModalComponent, TileColorDirective],
   imports: [CommonModule, ProductsRoutingModule, AntDesignModule, FormsModule, ReactiveFormsModule],
 })
 export class ProductsModule {}
